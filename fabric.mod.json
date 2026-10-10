@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "xenatron",
+  "version": "${version}",
+  "name": "Xenatron",
+  "description": "A Meteor Client addon with security, redstone and SMP utilities.",
+  "authors": [
+    "CryptsX"
+  ],
+  "icon": "assets/xenatron/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "meteor": [
+      "com.example.addon.AddonTemplate"
+    ]
+  },
+  "mixins": [
+    "xenatron.mixins.json"
+  ],
+  "custom": {
+    "meteor-client:color": "255,255,255",
+    "modmenu": {
+      "parent": {
+        "id": "xenatron"
+      }
+    }
+  },
+  "depends": {
+    "java": ">=${jdk_version}",
+    "minecraft": "${minecraft_version}",
+    "meteor-client": "*"
+  }
+}
+
